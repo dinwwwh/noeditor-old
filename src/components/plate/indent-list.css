@@ -1,0 +1,6 @@
+.noeditor {
+  .slate-ol li,
+  .slate-ul li {
+    padding-left: 2px;
+  }
+}
