@@ -1,0 +1,7 @@
+.noeditor {
+  .slate-a {
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
