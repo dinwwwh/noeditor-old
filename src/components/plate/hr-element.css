@@ -1,0 +1,16 @@
+.noeditor {
+  .slate-hr {
+    padding: 6px 0;
+    cursor: default;
+
+    hr {
+      height: 1px;
+      background-color: var(--noeditor-hr-color);
+    }
+
+    &[data-selected='true'] {
+      background-color: var(--noeditor-hr-selected-background-color);
+      border-radius: 2px;
+    }
+  }
+}

@@ -11,6 +11,9 @@
 
     --noeditor-code-background-color: #f6f8fa;
     --noeditor-code-color: #24292e;
+
+    --noeditor-hr-color: #e1e4e8;
+    --noeditor-hr-selected-background-color: #f6f8fa;
   }
 
   font-family: var(--noeditor-font-sans-serif);
