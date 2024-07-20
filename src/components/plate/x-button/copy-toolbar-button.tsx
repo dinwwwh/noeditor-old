@@ -1,8 +1,8 @@
 import { CheckIcon, CopyIcon } from 'lucide-react'
 import useClipboard from 'react-use-clipboard'
-import { XButtonStateSchema } from '@/lib/plate/x-button'
 import type { PlateEditor, TElement } from '@udecode/plate-common'
 import { ToolbarButton } from '../toolbar'
+import { XButtonStateSchema } from '@/lib/plate/x-button'
 
 export function CopyToolbarButton({ element }: { element: TElement, editor: PlateEditor }) {
   const state = XButtonStateSchema.parse(element)

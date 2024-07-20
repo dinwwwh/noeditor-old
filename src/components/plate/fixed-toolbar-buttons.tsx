@@ -7,8 +7,6 @@ import {
 } from '@udecode/plate-basic-marks'
 import { useEditorReadOnly } from '@udecode/plate-common'
 
-import { Icons } from '@/components/icons'
-
 import { ListStyleType } from '@udecode/plate-indent-list'
 import { InsertDropdownMenu } from './insert-dropdown-menu'
 import { MarkToolbarButton } from './mark-toolbar-button'
@@ -16,6 +14,7 @@ import { ModeDropdownMenu } from './mode-dropdown-menu'
 import { ToolbarGroup } from './toolbar'
 import { TurnIntoDropdownMenu } from './turn-into-dropdown-menu'
 import { IndentListToolbarButton } from './indent-list-toolbar-button'
+import { Icons } from '@/components/icons'
 
 export function FixedToolbarButtons() {
   const readOnly = useEditorReadOnly()

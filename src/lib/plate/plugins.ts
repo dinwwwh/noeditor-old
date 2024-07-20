@@ -34,6 +34,9 @@ import { createDeserializeMdPlugin } from '@udecode/plate-serializer-md'
 import { createJuicePlugin } from '@udecode/plate-juice'
 import { ELEMENT_SLASH_INPUT, createSlashPlugin } from '@udecode/plate-slash-command'
 
+import { autoformatPlugin } from './autoformat/plugin'
+import { ELEMENT_X_BUTTON, createXButtonPlugin } from './x-button'
+import { ELEMENT_X_SPACER, createXSpacerPlugin } from './x-spacer'
 import { BlockquoteElement } from '@/components/plate/blockquote-element'
 import { CodeBlockElement } from '@/components/plate/code-block-element'
 import { CodeLineElement } from '@/components/plate/code-line-element'
@@ -52,13 +55,9 @@ import { CodeLeaf } from '@/components/plate/code-leaf'
 import { HighlightLeaf } from '@/components/plate/highlight-leaf'
 import { KbdLeaf } from '@/components/plate/kbd-leaf'
 import { withPlaceholders } from '@/components/plate/placeholder'
-import { withDraggables } from '@/components/plate/with-draggables'
 import { SlashInputElement } from '@/components/plate/slash-input-element'
 import { XButtonElement } from '@/components/plate/x-button/element'
 import { XSpacerElement } from '@/components/plate/x-spacer/element'
-import { autoformatPlugin } from './autoformat/plugin'
-import { ELEMENT_X_BUTTON, createXButtonPlugin } from './x-button'
-import { ELEMENT_X_SPACER, createXSpacerPlugin } from './x-spacer'
 
 export const plugins = createPlugins(
   [
@@ -223,7 +222,7 @@ export const plugins = createPlugins(
     createXSpacerPlugin(),
   ],
   {
-    components: withDraggables(withPlaceholders({
+    components: (withPlaceholders({
       [ELEMENT_BLOCKQUOTE]: BlockquoteElement,
       [ELEMENT_CODE_BLOCK]: CodeBlockElement,
       [ELEMENT_CODE_LINE]: CodeLineElement,

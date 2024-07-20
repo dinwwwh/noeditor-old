@@ -1,6 +1,7 @@
 import type { TElement } from '@udecode/plate-common'
 import { useEffect, useState } from 'react'
 import { Editor } from './components/editor'
+import classes from './app.module.css'
 
 export function App() {
   const [value, setValue] = useState<TElement[] | undefined>(undefined)
@@ -11,7 +12,7 @@ export function App() {
   }, [value])
 
   return (
-    <div>
+    <div className={`noeditor ${classes.container}`}>
       <Editor initialValue={value} onChange={setValue} />
     </div>
   )

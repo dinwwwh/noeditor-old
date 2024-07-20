@@ -10,8 +10,6 @@ import {
 // Prism must be imported before all language files
 import Prism from 'prismjs'
 
-import { Icons } from '@/components/icons'
-
 import { Button } from './button'
 import {
   Command,
@@ -21,6 +19,7 @@ import {
   CommandList,
 } from './command'
 import { Popover, PopoverContent, PopoverTrigger } from './popover'
+import { Icons } from '@/components/icons'
 
 import 'prismjs/components/prism-antlr4.js'
 import 'prismjs/components/prism-bash.js'

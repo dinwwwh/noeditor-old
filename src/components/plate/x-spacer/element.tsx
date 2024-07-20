@@ -1,11 +1,11 @@
-import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
-import { XSpacerStateSchema } from '@/lib/plate/x-spacer'
 import type { PlateEditor, TElement } from '@udecode/plate-common'
 import { PlateElement, findNodePath, setNodes, withRef } from '@udecode/plate-common'
 import { useReadOnly } from 'slate-react'
 import { tv } from 'tailwind-variants'
 import { Popover, PopoverAnchor, PopoverContent } from '../popover'
 import { Toolbar, ToolbarToggleGroup, ToolbarToggleItem } from '../toolbar'
+import { XSpacerStateSchema } from '@/lib/plate/x-spacer'
+import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
 
 export const xSpacer = tv({
   slots: {

@@ -18,10 +18,10 @@ import {
 import { ELEMENT_OL, ELEMENT_UL } from '@udecode/plate-list'
 import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph'
 
-import { ELEMENT_X_BUTTON } from '@/lib/plate/x-button'
-import { ELEMENT_X_SPACER } from '@/lib/plate/x-spacer'
 import { ELEMENT_IMAGE } from '@udecode/plate-media'
 import { Draggable, type DraggableProps } from './draggable'
+import { ELEMENT_X_BUTTON } from '@/lib/plate/x-button'
+import { ELEMENT_X_SPACER } from '@/lib/plate/x-spacer'
 
 export function withDraggable(Component: FC, options?: WithDraggableOptions<
   Partial<Omit<DraggableProps, 'children' | 'editor' | 'element'>>

@@ -1,0 +1,8 @@
+.noeditor {
+  .with-placeholder[data-enable-placeholder='true']:before {
+    position: absolute;
+    cursor: text;
+    opacity: 0.3;
+    content: attr(placeholder);
+  }
+}

@@ -1,9 +1,7 @@
-import { type XButtonState, XButtonStateSchema } from '@/lib/plate/x-button'
 import type { PlateEditor, TElement } from '@udecode/plate-common'
 import { PlateElement, withRef } from '@udecode/plate-common'
 import { useReadOnly } from 'slate-react'
 import { tv } from 'tailwind-variants'
-import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
 import { Globe2Icon } from 'lucide-react'
 import { Popover, PopoverAnchor, PopoverContent } from '../popover'
 import { Toolbar, ToolbarGroup } from '../toolbar'
@@ -11,6 +9,8 @@ import { AlignDropdownMenu } from './align-dropdown-menu'
 import { EditToolbarButton } from './edit-toolbar-button'
 import { RoundedDropdownMenu } from './rounded-dropdown-menu'
 import { CopyToolbarButton } from './copy-toolbar-button'
+import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
+import { type XButtonState, XButtonStateSchema } from '@/lib/plate/x-button'
 
 const xButton = tv({
   slots: {

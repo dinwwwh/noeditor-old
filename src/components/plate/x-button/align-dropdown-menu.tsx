@@ -1,7 +1,5 @@
 import type { DropdownMenuProps } from '@radix-ui/react-dropdown-menu'
 
-import { Icons, iconVariants } from '@/components/icons'
-import { type XButtonState, XButtonStateSchema } from '@/lib/plate/x-button'
 import { type PlateEditor, type TElement, findNodePath, setNodes } from '@udecode/plate-common'
 import {
   DropdownMenu,
@@ -12,6 +10,8 @@ import {
   useOpenState,
 } from '../dropdown-menu'
 import { ToolbarButton } from '../toolbar'
+import { type XButtonState, XButtonStateSchema } from '@/lib/plate/x-button'
+import { Icons, iconVariants } from '@/components/icons'
 
 const items = [
   {

@@ -10,10 +10,7 @@ import {
 import { ELEMENT_H1, ELEMENT_H2, ELEMENT_H3 } from '@udecode/plate-heading'
 import { ListStyleType, toggleIndentList } from '@udecode/plate-indent-list'
 
-import { Icons } from '@/components/icons'
-import { ELEMENT_X_BUTTON } from '@/lib/plate/x-button'
 import { ImageIcon, MousePointerClickIcon, MoveVerticalIcon } from 'lucide-react'
-import { ELEMENT_X_SPACER } from '@/lib/plate/x-spacer'
 import { ELEMENT_IMAGE } from '@udecode/plate-media'
 import {
   InlineCombobox,
@@ -22,6 +19,9 @@ import {
   InlineComboboxInput,
   InlineComboboxItem,
 } from './inline-combobox'
+import { Icons } from '@/components/icons'
+import { ELEMENT_X_BUTTON } from '@/lib/plate/x-button'
+import { ELEMENT_X_SPACER } from '@/lib/plate/x-spacer'
 
 interface SlashCommandRule {
   icon: ComponentType<SVGProps<SVGSVGElement>>

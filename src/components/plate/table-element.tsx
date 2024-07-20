@@ -23,8 +23,6 @@ import {
 } from '@udecode/plate-table'
 import { useReadOnly, useSelected } from 'slate-react'
 
-import { Icons, iconVariants } from '@/components/icons'
-
 import { Button } from './button'
 import {
   DropdownMenu,
@@ -35,6 +33,7 @@ import {
 } from './dropdown-menu'
 import { Popover, PopoverContent, popoverVariants } from './popover'
 import { Separator } from './separator'
+import { Icons, iconVariants } from '@/components/icons'
 
 export const TableBordersDropdownMenuContent = withRef<
   typeof DropdownMenuPrimitive.Content

@@ -21,10 +21,8 @@ export function Placeholder(props: PlaceholderProps) {
       className: child.props.className,
       nodeProps: {
         ...nodeProps,
-        className: cn(
-          enabled
-          && 'before:absolute before:cursor-text before:opacity-30 before:content-[attr(placeholder)]',
-        ),
+        'className': `with-placeholder`,
+        'data-enable-placeholder': enabled ? 'true' : 'false',
         placeholder,
       },
     })
