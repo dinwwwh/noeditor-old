@@ -1,10 +1,18 @@
 .noeditor .slate-action_item {
   display: flex;
-  align-items: center;
   padding: 3px 0;
 
   .checkbox {
     margin-right: 6px;
+    flex-shrink: 0;
+    align-self: start;
+    margin-top: 4px;
+  }
+
+  .content {
+    overflow: auto;
+    overflow-wrap: break-word;
+    line-height: 24px;
   }
 
   &[data-checked='true'] {

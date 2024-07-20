@@ -19,7 +19,7 @@ export function Editor({ initialValue, onChange }: EmailEditorProps) {
         <DndProvider backend={HTML5Backend}>
           <Plate plugins={plugins} initialValue={initialValue} onChange={onChange}>
 
-            <PlateContent disableDefaultStyles className="plate-content" />
+            <PlateContent className="plate-content" />
 
             <FloatingToolbar>
               <FloatingToolbarButtons />
