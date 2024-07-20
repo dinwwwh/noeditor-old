@@ -1,9 +1,12 @@
+import '@fontsource-variable/inter'
+import './main.css'
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './main.css'
+import { App } from './app'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <div>xin chao</div>
+    <App />
   </React.StrictMode>,
 )

@@ -11,6 +11,9 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "resolveJsonModule": true,
     "types": ["vite/client"],
     "allowImportingTsExtensions": true,
