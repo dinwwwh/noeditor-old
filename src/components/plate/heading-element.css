@@ -1,0 +1,29 @@
+.noeditor {
+  .slate-h1 {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 600;
+    padding: 3px 0px;
+    margin-top: 32px;
+    margin-bottom: 4px;
+  }
+  .slate-h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+    font-weight: 600;
+    padding: 3px 0px;
+    margin-top: 22.4px;
+    margin-bottom: 1px;
+  }
+  .slate-h3,
+  .slate-h4,
+  .slate-h5,
+  .slate-h6 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 3px 0px;
+    margin-top: 16px;
+    margin-bottom: 1px;
+  }
+}
