@@ -4,8 +4,3 @@
 @import './styles/base.css' layer(base);
 @import './styles/components.css' layer(components);
 @import './styles/utilities.css' layer(utilities);
-
-body {
-  background-color: white;
-  font-family: 'Inter Variable', sans-serif;
-}

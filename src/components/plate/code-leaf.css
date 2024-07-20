@@ -1,0 +1,11 @@
+.noeditor {
+  .slate-code {
+    font-family: var(--noeditor-font-monospace);
+    white-space: pre-wrap;
+    border-radius: 4px;
+    padding: 2.72px 5.44px;
+    font-size: 13.6px;
+    background-color: var(--noeditor-code-background-color);
+    color: var(--noeditor-code-color);
+  }
+}
