@@ -1,0 +1,16 @@
+.noeditor .slate-action_item {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+
+  .checkbox {
+    margin-right: 6px;
+  }
+
+  &[data-checked='true'] {
+    .content {
+      text-decoration: line-through;
+      color: var(--noeditor-text__disabled);
+    }
+  }
+}

@@ -9,6 +9,8 @@
       SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
       monospace;
 
+    --noeditor-text__disabled: #6b7280;
+
     --noeditor-code-background-color: #f6f8fa;
     --noeditor-code-color: #24292e;
 
@@ -18,6 +20,9 @@
     --noeditor-kbd-background-color: #f6f8fa;
     --noeditor-kbd-color: #24292e;
     --noeditor-kbd-border-color: #e1e4e8;
+
+    --noeditor-checkbox-background-color__checked: #24292e;
+    --noeditor-checkbox-color__checked: #f6f8fa;
   }
 
   font-family: var(--noeditor-font-sans-serif);
