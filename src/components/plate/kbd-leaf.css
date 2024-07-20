@@ -1,0 +1,12 @@
+.noeditor {
+  .slate-kbd {
+    font-family: var(--noeditor-font-monospace);
+    white-space: pre-wrap;
+    border-radius: 4px;
+    padding: 2.72px 6.24px;
+    font-size: 13.6px;
+    background-color: var(--noeditor-kbd-background-color);
+    color: var(--noeditor-kbd-color);
+    border: 1px solid var(--noeditor-kbd-border-color);
+  }
+}
