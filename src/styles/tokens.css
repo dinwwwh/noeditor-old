@@ -1,0 +1,35 @@
+.noeditor {
+  *,
+  *::before,
+  *::after {
+    --noeditor-font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+    --noeditor-font-mono: 'JetBrains Mono Variable', ui-monospace,
+      SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+      monospace;
+
+    --noeditor-color-zinc-50: #fafafa;
+    --noeditor-color-zinc-100: #f4f4f5;
+    --noeditor-color-zinc-200: #e4e4e7;
+    --noeditor-color-zinc-300: #d4d4d8;
+    --noeditor-color-zinc-400: #a1a1aa;
+    --noeditor-color-zinc-500: #71717a;
+    --noeditor-color-zinc-600: #52525b;
+    --noeditor-color-zinc-700: #3f3f46;
+    --noeditor-color-zinc-800: #27272a;
+    --noeditor-color-zinc-900: #18181b;
+    --noeditor-color-zinc-950: #09090b;
+
+    --noeditor-fg-gray-50: var(--noeditor-color-zinc-50);
+    --noeditor-fg-gray-500: var(--noeditor-color-zinc-500);
+    --noeditor-fg-gray-800: var(--noeditor-color-zinc-800);
+    --noeditor-fg-gray-950: var(--noeditor-color-zinc-950);
+
+    --noeditor-bg-gray-50: var(--noeditor-color-zinc-50);
+    --noeditor-bg-gray-100: var(--noeditor-color-zinc-100);
+    --noeditor-bg-gray-800: var(--noeditor-color-zinc-800);
+
+    --noeditor-border-gray-200: var(--noeditor-color-zinc-200);
+  }
+}

@@ -1,6 +1,7 @@
-@layer reset, base, ui, components, utilities;
+@layer reset, tokens, base, ui, components, utilities;
 
 @import './styles/reset.css' layer(reset);
+@import './styles/tokens.css' layer(tokens);
 @import './styles/base.css' layer(base);
 @import './styles/ui.css' layer(ui);
 @import './styles/components.css' layer(components);

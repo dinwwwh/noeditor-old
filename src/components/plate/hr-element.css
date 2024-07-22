@@ -5,11 +5,11 @@
 
     hr {
       height: 1px;
-      background-color: var(--noeditor-hr-color);
+      color: var(--noeditor-border-gray-200);
     }
 
     &[data-selected='true'] {
-      background-color: var(--noeditor-hr-selected-background-color);
+      background-color: var(--noeditor-bg-gray-50);
       border-radius: 2px;
     }
   }

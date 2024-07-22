@@ -1,29 +1,19 @@
 .noeditor {
-  *,
-  *::before,
-  *::after {
-    --noeditor-font-sans-serif: 'Inter Variable', 'Inter', ui-sans-serif,
-      system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji';
-    --noeditor-font-monospace: 'JetBrains Mono Variable', ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
-      monospace;
+  font-family: var(--noeditor-font-sans);
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
 
-    --noeditor-text__disabled: #6b7280;
+  color: var(--noeditor-fg-gray-950);
 
-    --noeditor-code-background-color: #f6f8fa;
-    --noeditor-code-color: #24292e;
-
-    --noeditor-hr-color: #e1e4e8;
-    --noeditor-hr-selected-background-color: #f6f8fa;
-
-    --noeditor-kbd-background-color: #f6f8fa;
-    --noeditor-kbd-color: #24292e;
-    --noeditor-kbd-border-color: #e1e4e8;
-
-    --noeditor-checkbox-background-color__checked: #24292e;
-    --noeditor-checkbox-color__checked: #f6f8fa;
+  * {
+    border-color: var(--noeditor-border-gray-200);
   }
 
-  font-family: var(--noeditor-font-sans-serif);
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--noeditor-font-mono);
+  }
 }

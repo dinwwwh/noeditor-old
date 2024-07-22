@@ -5,7 +5,7 @@
   border: 1px solid currentColor;
 
   &[data-state='checked'] {
-    background-color: var(--noeditor-checkbox-background-color__checked);
+    background-color: var(--noeditor-bg-gray-800);
     border: none;
   }
 
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--noeditor-checkbox-color__checked);
+    color: var(--noeditor-fg-gray-50);
   }
 
   .checkbox-icon {
