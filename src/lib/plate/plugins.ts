@@ -12,7 +12,6 @@ import { createCaptionPlugin } from '@udecode/plate-caption'
 import { ELEMENT_TABLE, ELEMENT_TD, ELEMENT_TH, ELEMENT_TR, createTablePlugin } from '@udecode/plate-table'
 import { ELEMENT_TODO_LI, createTodoListPlugin } from '@udecode/plate-list'
 import { MARK_BOLD, MARK_CODE, MARK_ITALIC, MARK_STRIKETHROUGH, MARK_SUBSCRIPT, MARK_SUPERSCRIPT, MARK_UNDERLINE, createBoldPlugin, createCodePlugin, createItalicPlugin, createStrikethroughPlugin, createSubscriptPlugin, createSuperscriptPlugin, createUnderlinePlugin } from '@udecode/plate-basic-marks'
-import { createFontBackgroundColorPlugin, createFontColorPlugin, createFontSizePlugin } from '@udecode/plate-font'
 import { MARK_HIGHLIGHT, createHighlightPlugin } from '@udecode/plate-highlight'
 import { MARK_KBD, createKbdPlugin } from '@udecode/plate-kbd'
 import { createAlignPlugin } from '@udecode/plate-alignment'
@@ -86,9 +85,6 @@ export const plugins = createPlugins(
     createCodePlugin(),
     createSubscriptPlugin(),
     createSuperscriptPlugin(),
-    createFontColorPlugin(),
-    createFontBackgroundColorPlugin(),
-    createFontSizePlugin(),
     createHighlightPlugin(),
     createKbdPlugin(),
     createAlignPlugin({
