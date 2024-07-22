@@ -1,7 +1,7 @@
 .noeditor {
   .slate-code {
     white-space: pre-wrap;
-    border-radius: 4px;
+    border-radius: var(--noeditor-border-radius-sm);
     padding: 2.72px 5.44px;
     font-size: 13.6px;
     background-color: var(--noeditor-bg-gray-100);

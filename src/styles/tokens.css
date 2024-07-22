@@ -31,5 +31,9 @@
     --noeditor-bg-gray-800: var(--noeditor-color-zinc-800);
 
     --noeditor-border-gray-200: var(--noeditor-color-zinc-200);
+
+    --noeditor-border-radius-sm: 4px;
+    --noeditor-border-radius-md: 6px;
+    --noeditor-border-radius-lg: 8px;
   }
 }
