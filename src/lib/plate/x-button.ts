@@ -28,7 +28,6 @@ export const createXButtonPlugin = createPluginFactory({
       const attributes = XButtonStateSchema.parse({
         href: el.getAttribute('href'),
         rounded: el.getAttribute('rounded'),
-        width: el.getAttribute('width'),
         align: el.getAttribute('align'),
       })
 

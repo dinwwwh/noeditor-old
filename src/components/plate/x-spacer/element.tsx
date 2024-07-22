@@ -1,43 +1,19 @@
 import type { PlateEditor, TElement } from '@udecode/plate-common'
 import { PlateElement, findNodePath, setNodes, withRef } from '@udecode/plate-common'
-import { useReadOnly } from 'slate-react'
+import { useReadOnly, useSelected } from 'slate-react'
 import { tv } from 'tailwind-variants'
 import { Popover, PopoverAnchor, PopoverContent } from '../popover'
 import { Toolbar, ToolbarToggleGroup, ToolbarToggleItem } from '../toolbar'
 import { XSpacerStateSchema } from '@/lib/plate/x-spacer'
 import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
 
-export const xSpacer = tv({
-  slots: {
-    root: '',
-  },
-  variants: {
-    height: {
-      sm: {
-        root: 'h-2',
-      },
-      md: {
-        root: 'h-4',
-      },
-      lg: {
-        root: 'h-8',
-      },
-      xl: {
-        root: 'h-16',
-      },
-    },
-  },
-  defaultVariants: {
-    height: 'md',
-  },
-})
-
 export const XSpacerElement = withRef<typeof PlateElement>(({ children, ...props }, ref) => {
   const state = XSpacerStateSchema.parse(props.element)
-  const { root } = xSpacer({ height: state.height })
+  const selected = useSelected()
+
   return (
     <XSpacerToolbar element={props.element} editor={props.editor}>
-      <PlateElement {...props} ref={ref} className={root({ className: props.className })}>
+      <PlateElement {...props} ref={ref} data-height={state.height} data-selected={selected}>
         {children}
       </PlateElement>
     </XSpacerToolbar>

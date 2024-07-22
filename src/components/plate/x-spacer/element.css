@@ -1,0 +1,20 @@
+.noeditor .slate-x-spacer {
+  height: 8px;
+
+  &[data-height='md'] {
+    height: 16px;
+  }
+
+  &[data-height='lg'] {
+    height: 32px;
+  }
+
+  &[data-height='xl'] {
+    height: 64px;
+  }
+
+  &[data-selected='true'] {
+    background-color: var(--noeditor-bg-gray-100);
+    border-radius: var(--noeditor-border-radius-sm);
+  }
+}
