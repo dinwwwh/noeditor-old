@@ -1,0 +1,38 @@
+.noeditor .slate-x-button {
+  display: flex;
+
+  &[data-align='left'] {
+    justify-content: flex-start;
+  }
+
+  &[data-align='center'] {
+    justify-content: center;
+  }
+
+  &[data-align='right'] {
+    justify-content: flex-end;
+  }
+
+  &[data-align='justify'] .x-button-link {
+    width: 100%;
+  }
+
+  .x-button-link {
+    padding: 24px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--noeditor-bg-gray-900);
+    color: var(--noeditor-fg-gray-50);
+    font-weight: 600;
+  }
+
+  &[data-rounded='md'] .x-button-link {
+    border-radius: var(--noeditor-border-radius-lg);
+  }
+
+  &[data-rounded='full'] .x-button-link {
+    border-radius: var(--noeditor-border-radius-full);
+  }
+}

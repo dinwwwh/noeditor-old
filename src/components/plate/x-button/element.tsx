@@ -12,55 +12,13 @@ import { CopyToolbarButton } from './copy-toolbar-button'
 import { useDebounceToolbarOpen } from '@/lib/plate/use-debounce-toolbar-open'
 import { type XButtonState, XButtonStateSchema } from '@/lib/plate/x-button'
 
-const xButton = tv({
-  slots: {
-    root: 'flex',
-    button: [
-      'px-6 h-11 inline-flex justify-center items-center',
-      'bg-zinc-900 text-white font-semibold',
-    ],
-  },
-  variants: {
-    rounded: {
-      none: {
-        button: 'rounded-none',
-      },
-      md: {
-        button: 'rounded-lg',
-      },
-      full: {
-        button: 'rounded-full',
-      },
-    },
-    align: {
-      left: {
-        root: 'justify-start',
-      },
-      center: {
-        root: 'justify-center',
-      },
-      right: {
-        root: 'justify-end',
-      },
-      justify: {
-        button: 'w-full',
-      },
-    },
-  },
-  defaultVariants: {
-    rounded: 'md',
-    align: 'center',
-  },
-})
-
 export const XButtonElement = withRef<typeof PlateElement>(({ children, ...props }, ref) => {
   const { href, rounded, align } = props.element as unknown as XButtonState
-  const { root, button } = xButton({ rounded, align })
 
   return (
-    <PlateElement ref={ref} {...props} className={root({ className: props.className })}>
+    <PlateElement ref={ref} {...props} data-rounded={rounded} data-align={align}>
       <XButtonToolbar element={props.element} editor={props.editor}>
-        <a href={href} target="_blank" className={button()}>
+        <a href={href} target="_blank" className="x-button-link">
           {children}
         </a>
       </XButtonToolbar>

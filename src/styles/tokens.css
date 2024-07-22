@@ -29,11 +29,13 @@
     --noeditor-bg-gray-50: var(--noeditor-color-zinc-50);
     --noeditor-bg-gray-100: var(--noeditor-color-zinc-100);
     --noeditor-bg-gray-800: var(--noeditor-color-zinc-800);
+    --noeditor-bg-gray-900: var(--noeditor-color-zinc-900);
 
     --noeditor-border-gray-200: var(--noeditor-color-zinc-200);
 
     --noeditor-border-radius-sm: 4px;
     --noeditor-border-radius-md: 6px;
     --noeditor-border-radius-lg: 8px;
+    --noeditor-border-radius-full: 9999px;
   }
 }
